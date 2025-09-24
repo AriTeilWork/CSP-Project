@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CSP_Project.MainPage"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    Title="TT00BI73 Hello World">
+
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30"
+        VerticalOptions="Center">
+
+        <Image
+            Source="dotnet_bot.png"
+            SemanticProperties.Description="MAUI Logo"
+            HeightRequest="200"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="TT00BI73 Client-Side Programming (IT2023-A)"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="24"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center" />
+
+        <Label
+            Text="Hello World Application"
+            FontSize="20"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center" />
+
+        <Entry
+            x:Name="NameEntry"
+            Placeholder="Enter your name"
+            FontSize="18"
+            HorizontalOptions="Fill" />
+        
+        <Button
+            Text="Say Hello"
+            Clicked="OnHelloClicked"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="HelloLabel"
+            FontSize="22"
+            HorizontalOptions="Center"
+            TextColor="DarkBlue"
+            HorizontalTextAlignment="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
